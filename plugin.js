@@ -23,26 +23,21 @@
  * with the given name will be provided in the dropdown box.  This heading is
  * not clickable and does not insert, it is for organizational purposes only.
  */
-CKEDITOR.config.strinsert_strings =	 [
-			{'name': 'Name', 'value': '*|VALUE|*'},
-			{'name': 'Group 1'},
-			{'name': 'Another name', 'value': 'totally_different', 'label': 'Good looking'},
-		];
 
 /**
  * String to use as the button label.
  */
-CKEDITOR.config.strinsert_button_label = 'Insert';
+CKEDITOR.config.strinsert_button_label = 'Insert Tags';
 
 /**
  * String to use as the button title.
  */
-CKEDITOR.config.strinsert_button_title = 'Insert content';
+CKEDITOR.config.strinsert_button_title = 'Insert Tags';
 
 /**
  * String to use as the button voice label.
  */
-CKEDITOR.config.strinsert_button_voice = 'Insert content';
+CKEDITOR.config.strinsert_button_voice = 'Insert Tags';
 
 CKEDITOR.plugins.add('strinsert',
 {
