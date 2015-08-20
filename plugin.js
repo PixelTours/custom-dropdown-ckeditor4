@@ -51,9 +51,6 @@ CKEDITOR.plugins.add('strinsert',
 	{
 		var config = editor.config;
 
-		// Gets the list of insertable strings from the settings.
-		var strings = config.strinsert_strings;
-
 		// add the menu to the editor
 		editor.ui.addRichCombo('strinsert',
 		{
@@ -71,6 +68,8 @@ CKEDITOR.plugins.add('strinsert',
 
 			init: function()
 			{
+                // Gets the list of insertable strings from the settings.
+                var strings = config.strinsert_strings;
 				var lastgroup = '';
 				for(var i=0, len=strings.length; i < len; i++)
 				{
