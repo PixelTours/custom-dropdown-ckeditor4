@@ -39,6 +39,10 @@ CKEDITOR.config.strinsert_button_title = 'Insert Tags';
  */
 CKEDITOR.config.strinsert_button_voice = 'Insert Tags';
 
+CKEDITOR.setStringInsertDropdown = function(data){
+    CKEDITOR.config.strinsert_strings = $.parseJSON(data);
+};
+
 CKEDITOR.plugins.add('strinsert',
 {
 	requires : ['richcombo'],
