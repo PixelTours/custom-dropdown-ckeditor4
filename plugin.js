@@ -49,7 +49,8 @@ CKEDITOR.plugins.add('strinsert',
 	init : function( editor )
 	{
 		var config = editor.config;
-
+		$(window).trigger('strinsert.loaded');
+		
 		// add the menu to the editor
 		editor.ui.addRichCombo('strinsert',
 		{
